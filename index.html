@@ -1,100 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: url('https://d2s742iet3d3t1.cloudfront.net/restaurants/restaurant-176973000000000000/restaurant_1697055311.jpg') no-repeat center center fixed;
-      background-size: cover;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <style>
+        body {
+            background-image: url('background.jpg'); /* Replace with your background image URL */
+            background-size: cover;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
 
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-    }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
 
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
+        nav {
+            background-color: #555;
+            padding: 10px;
+            text-align: center;
+        }
 
-    nav li {
-      display: inline;
-      margin-right: 20px;
-    }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
 
-    section {
-      margin: 20px;
-      color: #333;
-      background-color: rgba(255, 255, 255, 0.8);
-      padding: 20px;
-      border-radius: 10px;
-    }
+        section {
+            padding: 20px;
+        }
 
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 10px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
-  <title>Namaste Denton Restaurant</title>
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 25px;
+            height: 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
+
 <body>
-  <header>
-    <h1>Namaste Denton Restaurant</h1>
+
+    <header>
+        <h1>Library Management System</h1>
+    </header>
+
     <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#videos">Videos</a></li>
-      </ul>
+        <a href="#">Home</a>
+        <a href="#">Books</a>
+        <a href="#">Members</a>
+        <a href="#">Contact</a>
     </nav>
-  </header>
 
-  <section id="home">
-    <h2>Welcome to Namaste Denton Restaurant</h2>
-    <p>Your destination for delightful dining experiences.</p>
-  </section>
+    <section class="container">
+        <h2>Welcome to our Library</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non sem sit amet turpis rutrum mattis.
+            Suspendisse potenti.</p>
 
-  <section id="menu">
-    <h2>Our Menu</h2>
-    <p>Explore our delicious offerings:</p>
-    <ul>
-      <li>Chicken Biryani</li>
-      <li>Veg Biryani</li>
-      <li>Goat Biryani</li>
-    </ul>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0"
+                allowfullscreen></iframe>
+        </div>
 
-    <h3>Soups</h3>
-    <ul>
-      <li>Corn Soup</li>
-      <li>Tomato Soup</li>
-      <li>Chicken Soup</li>
-    </ul>
+        <h3>Search Books</h3>
+        <input type="text" placeholder="Enter book title">
 
-    <p>For more options, check our <a href="https://order.toasttab.com/online/namastedenton" target="_blank">online menu</a>.</p>
-  </section>
+        <button>Search</button>
 
-  <section id="videos">
-    <h2>Restaurant Videos</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/IzCO796HU3w" frameborder="0" allowfullscreen></iframe>
-  </section>
+        <h3>Available Books</h3>
+        <ul>
+            <li>Book 1</li>
+            <li>Book 2</li>
+            <li>Book 3</li>
+        </ul>
 
-  <footer>
-    <p>&copy; 2023 Namaste Denton Restaurant. All rights reserved.</p>
-  </footer>
+        <h3>Upcoming Events</h3>
+        <ol>
+            <li>Book Club Meeting - Date</li>
+            <li>Author Talk - Date</li>
+        </ol>
+    </section>
 
-  <script src="scripts.js"></script>
+    <footer>
+        <p>&copy; 2023 Library Management System</p>
+    </footer>
+
 </body>
+
 </html>
